@@ -1,0 +1,46 @@
+Actor:
+- <Actor sẽ thực hiện use case>
+Summary:
+- <Tóm tắt về tính năng của use case>
+Goal:
+- <Mục đích của use case: kết quả khi usecase kết thúc thành công>
+Triggers:
+- <Bước làm use case được kích hoạt>
+Preconditions:
+- <Xác định các ràng buộc phải đạt được trước khi chức năng được thực hiện,
+thông thường là role của actor, trạng thái yêu cầu của dữ liệu, các ràng buộc về
+toàn vẹn dữ liệu hay qui trình>
+- Ví dụ: để cancel một hóa đơn thì precondition là
+o User phải là một customer
+o Hóa đơn vẫn đang trong tình trạng chưa hết thời hạn hủy của hệ thống
+là 3 ngày
+Post Conditions:
+- < Trạng thái sau khi tiến hành bắt buộc phải có 2 trạng thái cho success và fail.
+Vì vậy khi ghi phải có đủ và phần fail bắt buộc xuất hiện trong exception
+scenario>
+- Success: Khi thành công thì tình trạng hệ thống thế nào đối với hệ thống
+và đối với người dùng
+- Fail: Khi có lỗi xảy ra thì hệ thống sẽ xử lý thế nào để đảm bảo usability
+cho người dùng và toàn vẹn dữ liệu cho hệ thống
+Main Success Scenario: <Hướng xử lý chính của hệ thống>
+Step Actor Action System Response
+1 -
+2
+Alternative Scenario: <Hướng xử lý khác trong tình huống dữ liệu cụ thể như mệnh đề if 
+hoặc lựa chọn khác của người dùng trong quá trình main flow được
+diễn ra>
+No Actor Action System Response
+1
+Exceptions: Gồm các tình huống xử lý ngoại lệ cũng như xử lý các exception do
+người dùng gây ra khi nhập liệu
+No Actor Action System Response
+Relationships: Mối quan hệ với các Use case khác nếu có trong quá trình xử lý, tuy
+nhiên nó không phải là abstract usecase
+Business Rules:
+- Thành phần mô tả các yêu cầu về mặt nghiệp vụ của use case.
+- Tất cả các giả định về nghiệp vụ nếu có phải được ghi vào
+- Chú ý tới sự chuyển đổi về trạng thái của dữ liệu cũng phải được ghi tại đây
+- Các định nghĩa cũng cần làm rõ (sản phẩm nổi bật, sản phẩm sắp có là sản
+phẩm thế nào trong hệ thống)
+- Các ràng buộc dữ liệu dưới hệ thống, các rule liên quan đến toàn vẹn dữ liệu
+- Các qui trình, activities, quá trình chuyển đổi trạng thái của hệ thống
